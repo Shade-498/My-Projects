@@ -1,1 +1,3 @@
-My projects
+My Projects.
+Programming Language - Python.
+Telegram - @shade498.

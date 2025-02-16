@@ -2,8 +2,7 @@ import requests
 from requests.exceptions import RequestException
 import time
 
-API_KEY = "BQGPUW9HYTACK9GUGMCWBNFE5"  # register on https://www.visualcrossing.com/ to get API_KEY
-
+API_KEY = "BQGPUW9HYTACK9GUGMCWBNFE5"
 
 def retry(func):
     def wrapper_retry(*args, **kwargs):

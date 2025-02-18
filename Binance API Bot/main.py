@@ -1,8 +1,11 @@
 from telebot import TeleBot
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 import requests
+from dotenv import load_dotenv
+import os
 
-TOKEN = "7599067821:AAGSj08BhASr2ft6HbYLRCZGuCm_e6bNGtA"
+load_dotenv()
+TOKEN = os.getenv("TOKEN")
 
 CRYPTO_NAME_TO_TICKER = {
     "Bitcoin": "BTCUSDT",

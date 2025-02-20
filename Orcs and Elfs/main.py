@@ -97,5 +97,5 @@ def fight(*, character_1: Character, character_2: Character) -> None:
     print(f"{character_1.character_name} is {'alive' if character_1.is_alive() else 'dead'}", character_1)
     print(f"{character_2.character_name} is {'alive' if character_2.is_alive() else 'dead'}", character_2)
 
-
-fight(character_1=ork, character_2=elf)
+if __name__ == "__main__":
+  fight(character_1=ork, character_2=elf)

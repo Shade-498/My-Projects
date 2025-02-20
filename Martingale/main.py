@@ -34,11 +34,11 @@ def play_martingale(*, starting_funds: int, min_bet: int, max_bet: int) -> int:
 
       if current_bet > max_bet:
         current_bet = min_bet
-        
+
       if current_bet > current_funds:
         current_bet = current_funds
 
   return steps_to_loose
 
-
-print(play_martingale(starting_funds=100, min_bet=1, max_bet=1000)) # Game parameters
+if __name__ == "__main__":
+  print(play_martingale(starting_funds=100, min_bet=1, max_bet=1000)) # Game parameters

@@ -14,9 +14,6 @@ def countdown(target_date: datetime) -> str:
     return f"Time left: {days} days, {hours} hours, {minutes} minutes, {seconds} seconds"
 
 # Example usage
-def main():
+if __name__ == "__main__":
     target = datetime(2025, 12, 31, 23, 59, 59) # New Year 2026
     print(countdown(target))
-
-if __name__ == "__main__":
-    main()

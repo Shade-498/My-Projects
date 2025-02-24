@@ -8,7 +8,7 @@ def is_leap_year(year: int) -> bool:
 def main():
     while True:
         user_input = input("Enter a year (or type 'exit' to quit): ") # Ask the user for input
-        
+
         if user_input.lower() == 'exit': # Check if the user wants to exit
             print("Exiting the program. Goodbye!")
             break
@@ -20,5 +20,7 @@ def main():
         else:
             print(f"{year} is not a leap year.")
 
+        print("-" * 30)  # Divider
+        
 if __name__ == "__main__":
     main()

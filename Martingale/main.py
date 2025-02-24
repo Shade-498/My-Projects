@@ -16,7 +16,7 @@ def play_martingale(*, starting_funds: int, min_bet: int, max_bet: int) -> int:
   current_bet = min_bet
 
   while current_funds > 0:
-    print('==============================')
+    print("-" * 30)  # Divider
     steps_to_loose += 1
     current_funds -= current_bet
     print(f'Current funds: {current_funds}, Current bet: {current_bet}')

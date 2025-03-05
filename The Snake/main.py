@@ -17,6 +17,7 @@ fps = 5 # Snake speed
 
 pygame.init()
 sc = pygame.display.set_mode([RES, RES])
+pygame.display.set_caption("The Snake")
 
 clock = pygame.time.Clock()
 
